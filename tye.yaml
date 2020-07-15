@@ -1,0 +1,10 @@
+name: Tye
+services:
+- name: Web
+  project: Web/Web.csproj
+  bindings:
+  - port: 5126
+- name: Data
+  project: Data/Data.csproj
+  bindings:
+  - port: 5125
