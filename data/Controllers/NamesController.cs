@@ -14,7 +14,7 @@ namespace Data.Controllers
             new Faker<Person>()
                 .RuleFor(o => o.First, f => f.Name.FirstName())
                 .RuleFor(o => o.Last, f => f.Name.FirstName())
-                .Generate(50)
+                .Generate(25)
                 .Select(p => $"{p.First} {p.Last}");
     }
 

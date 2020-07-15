@@ -4,11 +4,8 @@
 @inject HttpClient Http
 @if (!names.Any())
 {
-    <h1 class="display-1">
-        <em>
-            Loading...
-        </em>
-    </h1>
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+    <span class="sr-only">Loading...</span>
 }
 else
 {
